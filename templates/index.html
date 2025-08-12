@@ -482,10 +482,10 @@
             const monthlyTotal = monthlyExpenses.reduce((sum, expense) => sum + parseFloat(expense.monto), 0);
             const average = expenses.length > 0 ? total / expenses.length : 0;
 
-            document.getElementById('totalGastos').textContent = `$${total.toFixed(2)}`;
-            document.getElementById('gastosMes').textContent = `$${monthlyTotal.toFixed(2)}`;
+            document.getElementById('totalGastos').textContent = `S/${total.toFixed(2)}`;
+            document.getElementById('gastosMes').textContent = `S/${monthlyTotal.toFixed(2)}`;
             document.getElementById('cantidadGastos').textContent = expenses.length;
-            document.getElementById('promedioGastos').textContent = `$${average.toFixed(2)}`;
+            document.getElementById('promedioGastos').textContent = `S/${average.toFixed(2)}`;
         }
 
         // Mostrar formulario de agregar
