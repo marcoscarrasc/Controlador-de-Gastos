@@ -27,7 +27,7 @@ Una aplicación web moderna para gestionar y controlar gastos mensuales con pers
 - Python 3.7 o superior
 - pip (gestor de paquetes de Python)
 
-### Pasos de Instalación
+### Pasos de Instalación Local
 
 1. **Clonar o descargar el proyecto**
    ```bash
@@ -49,6 +49,44 @@ Una aplicación web moderna para gestionar y controlar gastos mensuales con pers
    ```
    http://localhost:5000
    ```
+
+## 🚀 Despliegue en la Nube
+
+### Opción 1: Render (Recomendado)
+
+1. **Crear cuenta en [Render.com](https://render.com)**
+2. **Conectar tu repositorio de GitHub**
+3. **Crear nuevo Web Service**
+4. **Configurar:**
+   - **Build Command**: `pip install -r requirements.txt`
+   - **Start Command**: `gunicorn app:app`
+5. **¡Listo! Tu app estará disponible en `https://tu-app.onrender.com`**
+
+### Opción 2: Railway
+
+1. **Crear cuenta en [Railway.app](https://railway.app)**
+2. **Conectar tu repositorio de GitHub**
+3. **Railway detectará automáticamente la configuración**
+4. **¡Listo! Tu app estará disponible en `https://tu-app.railway.app`**
+
+### Opción 3: Heroku
+
+1. **Crear cuenta en [Heroku.com](https://heroku.com)**
+2. **Instalar Heroku CLI**
+3. **Ejecutar comandos:**
+   ```bash
+   heroku login
+   heroku create tu-app-name
+   git push heroku main
+   ```
+4. **¡Listo! Tu app estará disponible en `https://tu-app-name.herokuapp.com`**
+
+### Opción 4: Vercel
+
+1. **Crear cuenta en [Vercel.com](https://vercel.com)**
+2. **Conectar tu repositorio de GitHub**
+3. **Vercel detectará automáticamente la configuración**
+4. **¡Listo! Tu app estará disponible en `https://tu-app.vercel.app`**
 
 ## Uso
 
